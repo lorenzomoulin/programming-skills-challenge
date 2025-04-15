@@ -1,0 +1,3 @@
+We can start approaching the problem observing that if K is too big (k >= |s| + |t|) we can erase s and remove from the empty string as many times as we need and then fill s with the characters of t string.
+
+Else, we need to calculate the minimum number of operations to get t in s. Let's define "pref" as the biggest common prefix of s and t. The minimum number of operations is (|s| - pref) + (|t| - pref), in other words, is the sum of the minimum number of removes and minimum number of concats. Once we have M (the minimum number of operations), we need to check if k >= M and (k - M) is multiple of 2, because, if k is bigger than M, the remaining number of operations needs to be even, so that we can concat and remove as long as we need.
