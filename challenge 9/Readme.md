@@ -2,3 +2,4 @@ The implementation is based on the XOR reverse algorithm. Chars are represented 
 1 -> a = a ^ b; We temporarily store a ^ b in a. 
 2 -> b = a ^ b; Now b has the original a value.
 3 -> a = a ^ b; Now a has the original b value.
+So to reverse a string, we maintain a pointer to start and end, swap(start, end) while start < end.
