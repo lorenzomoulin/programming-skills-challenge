@@ -1,0 +1,1 @@
+Solution implemented for MariaDB
