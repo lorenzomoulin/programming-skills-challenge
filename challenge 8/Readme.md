@@ -1,0 +1,1 @@
+A string is simply a char array that terminates with a \0 character, so to calculate the length of a string, we just need to iterate over it until we reach the \0 character.
